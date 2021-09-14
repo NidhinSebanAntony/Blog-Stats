@@ -36,3 +36,60 @@
     transform: rotate(360deg);
   }
 }
+
+.app-container {
+  display: flex;
+}
+
+.sidebar-container {
+  height: 100vh;
+  width: 250px;
+  background: #303f9f;
+}
+
+.content {
+  height: 100vh;
+  width: calc(100vw - 250px);
+  overflow-y: scroll;
+}
+
+.toggle-menu {
+  display: none;
+  margin: 5px;
+}
+
+.toggle-menu-container {
+  display: flex;
+  justify-content: end;
+}
+
+.post-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.post-page-card {
+  width: 30%;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar-container {
+    display: none;
+  }
+
+  .content {
+    width: 98vw;
+  }
+
+  .toggle-menu {
+    display: block;
+  }
+  .post-page-container {
+    flex-direction: column;
+  }
+  .post-page-card {
+    width: 100%;
+  }
+}
