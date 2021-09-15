@@ -48,7 +48,6 @@ const ToggleMenu = () => {
             >
                 <MenuItem className={classes.menuItem} onClick={()=>{window.location.href='/'; handleClose()}}>Dashboard</MenuItem>
                 <MenuItem className={classes.menuItem} onClick={()=>{window.location.href='/posts'; handleClose()}}>Post</MenuItem>
-                <MenuItem className={classes.menuItem} onClick={()=>{window.location.href='/links'; handleClose()}}>Links</MenuItem>
             </Menu>
         </div>
     );
